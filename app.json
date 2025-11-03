@@ -1,0 +1,24 @@
+{
+  "name": "CHAMP_MD-V2",
+  "description": "WhatsApp bot dashboard and backend for Heroku deployment.",
+  "repository": "https://github.com/Daniel432-gift/creepy-v2-backend",
+  "keywords": ["node", "express", "whatsapp", "bot", "dashboard"],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
